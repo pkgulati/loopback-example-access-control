@@ -40,7 +40,7 @@
     "public": true
   },
   "account": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   }
 }
