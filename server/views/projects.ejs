@@ -52,6 +52,34 @@
           team member and provide or deny access accordingly.</td>
       </tr>
       <tr>
+        <td><a href="/api/accounts<% if (typeof accessToken !== 'undefined') {
+            %>?access_token=<%= accessToken %><% } %>">View all
+            accounts</a></td>
+        <td>view all accounts</td>
+        <td>GET /api/accounts</td>
+        <td>admin</td>
+        <td>Administator</td>
+        <td>..</td>
+      </tr>
+      <tr>
+        <td>
+          <form action="/api/accounts<% if (typeof accessToken !==
+              'undefined') { %>?access_token=<%= accessToken %><% } %>"
+              method="post">
+            <label for="name">Open Account</h2>
+            <input type="text" name="name">
+            <input type="text" name="accountType">
+            <input type="number" name="balance">
+            <input type="submit" value="Submit">
+          </form>
+        </td>
+        <td>Open Account</td>
+        <td>POST /api/accounts</td>
+        <td>$authenticated</td>
+        <td>Team member, owner, admin</td>
+        <td>.</td>
+      </tr>
+      <tr>
         <td>
           <form action="/api/projects/donate<% if (typeof accessToken !==
               'undefined') { %>?access_token=<%= accessToken %><% } %>"

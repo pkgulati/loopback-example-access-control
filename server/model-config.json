@@ -38,5 +38,9 @@
   "project": {
     "dataSource": "db",
     "public": true
+  },
+  "account": {
+    "dataSource": "db",
+    "public": true
   }
 }
